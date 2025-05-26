@@ -9,6 +9,7 @@ interface Book {
   price: number;
   image: string;
   genre: string;
+  description: string;
 }
 
 interface CategoriesProps {
