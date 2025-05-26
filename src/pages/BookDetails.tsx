@@ -17,6 +17,7 @@ interface Book {
   price: number;
   image: string;
   genre: string;
+  description: string;
 }
 
 interface BookDetailsProps {
@@ -90,10 +91,7 @@ const BookDetails = ({ books }: BookDetailsProps) => {
           </p>
           <h2 className="text-lg font-semibold mt-6 mb-2">Sinopse</h2>
           <p className="text-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio minus
-            labore ad aperiam quae exercitationem culpa perspiciatis animi
-            fugiat possimus, quas rerum deleniti officia molestias maxime
-            molestiae eaque nesciunt corrupti!
+            {book.description}
           </p>
           <button
             className="bg-blue-950 text-white py-2 px-6 rounded mt-6 hover:bg-blue-900"

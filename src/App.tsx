@@ -19,7 +19,6 @@ import theSubtleArtImage from "./assets/the-subtle-art-of-not-giving-a-fuck.png"
 import theThingsImage from "./assets/the-things-you-can-see-only-when-you-slow-down.png";
 import verityImage from "./assets/verity.png";
 
-
 const books = [
   {
     id: 1,
@@ -27,7 +26,9 @@ const books = [
     author: "J.R.R. Tolkien",
     price: 59.9,
     image: lordOfTheRingsImage,
-    genre: "Fantasia"
+    genre: "Fantasia",
+    description:
+      "Uma épica jornada na Terra Média onde a pequena comunidade da Sociedade do Anel enfrenta perigos inimagináveis para destruir o Anel do Poder. Essa missão é crucial para impedir que o Senhor das Trevas, Sauron, domine o mundo com sua tirania e escuridão.",
   },
   {
     id: 2,
@@ -35,7 +36,9 @@ const books = [
     author: "J.K. Rowling",
     price: 69.9,
     image: harryPotterImage,
-    genre: "Fantasia"
+    genre: "Fantasia",
+    description:
+      "Harry Potter retorna para seu terceiro ano em Hogwarts enfrentando o misterioso e perigoso fugitivo Sirius Black. Entre novas descobertas e desafios, ele descobre segredos importantes sobre seu passado e o verdadeiro significado da amizade e coragem.",
   },
   {
     id: 3,
@@ -43,7 +46,9 @@ const books = [
     author: "Cassandra Clare",
     price: 54.9,
     image: cityOfBonesImage,
-    genre: "Fantasia"
+    genre: "Fantasia",
+    description:
+      "Clary Fray é lançada em um mundo oculto de Caçadores de Sombras, seres que lutam contra demônios. Ao descobrir sua verdadeira identidade, ela enfrenta perigos sobrenaturais e segredos familiares que mudarão sua vida para sempre.",
   },
   {
     id: 4,
@@ -51,7 +56,9 @@ const books = [
     author: "Colleen Hoover",
     price: 49.9,
     image: verityImage,
-    genre: "Suspense"
+    genre: "Suspense",
+    description:
+      "Uma escritora aceita terminar o manuscrito da autora Verity Crawford, mas ao investigar seus papéis pessoais, descobre segredos sombrios e perturbadores que colocam em dúvida a verdade sobre sua vida e suas intenções.",
   },
   {
     id: 5,
@@ -59,7 +66,9 @@ const books = [
     author: "Gillian Flynn",
     price: 46.9,
     image: goneGirlImage,
-    genre: "Suspense"
+    genre: "Suspense",
+    description:
+      "Quando Amy desaparece no dia do seu aniversário de casamento, todas as suspeitas recaem sobre seu marido Nick. A trama revela reviravoltas inesperadas e mostra as camadas ocultas de um relacionamento tóxico e cheio de manipulações.",
   },
   {
     id: 6,
@@ -67,7 +76,9 @@ const books = [
     author: "Freida McFadden",
     price: 59.9,
     image: theHousemaidImage,
-    genre: "Suspense"
+    genre: "Suspense",
+    description:
+      "Ao aceitar um emprego como empregada doméstica em uma mansão, a protagonista descobre que a família esconde segredos sombrios. Aos poucos, ela é envolvida em uma trama de suspense e mistério, onde nada é o que parece.",
   },
   {
     id: 7,
@@ -75,7 +86,9 @@ const books = [
     author: "Thomas Harris",
     price: 52.9,
     image: theSilenceOfTheLambsImage,
-    genre: "Suspense"
+    genre: "Suspense",
+    description:
+      "Clarice Starling, jovem agente do FBI, busca a ajuda do brilhante mas perturbado Dr. Hannibal Lecter para capturar um serial killer. A história explora os limites entre sanidade e loucura, enquanto Clarice enfrenta seus próprios demônios.",
   },
   {
     id: 8,
@@ -83,7 +96,9 @@ const books = [
     author: "George Orwell",
     price: 52.5,
     image: nineteenEightyFourImage,
-    genre: "Ficção distópica"
+    genre: "Ficção distópica",
+    description:
+      "Em um futuro sombrio e totalitário, o protagonista Winston Smith luta para preservar sua individualidade em uma sociedade controlada pelo Grande Irmão. O livro é uma crítica poderosa à vigilância, repressão e manipulação da verdade.",
   },
   {
     id: 9,
@@ -91,7 +106,9 @@ const books = [
     author: "Colleen Hoover",
     price: 42.9,
     image: itEndsWithUsImage,
-    genre: "Drama"
+    genre: "Drama",
+    description:
+      "Lily enfrenta um relacionamento complicado e abusivo enquanto tenta construir uma nova vida. A narrativa aborda temas delicados como amor, violência doméstica e superação, trazendo uma mensagem de esperança e coragem.",
   },
   {
     id: 10,
@@ -99,7 +116,9 @@ const books = [
     author: "Sally Rooney",
     price: 38.5,
     image: normalPeopleImage,
-    genre: "Drama"
+    genre: "Drama",
+    description:
+      "Acompanhe a complexa relação entre Marianne e Connell, desde o ensino médio até a universidade. A obra explora sentimentos intensos, vulnerabilidades e os desafios do amor em meio a inseguranças pessoais.",
   },
   {
     id: 11,
@@ -107,7 +126,9 @@ const books = [
     author: "Antoine de Saint-Exupéry",
     price: 29.9,
     image: lePetitPrinceImage,
-    genre: "Fábula / Fantasia"
+    genre: "Fábula / Fantasia",
+    description:
+      "Um pequeno príncipe viaja por planetas diferentes, descobrindo lições profundas sobre amor, amizade e a essência da vida. A fábula encantadora toca corações de todas as idades com sua simplicidade e sabedoria.",
   },
   {
     id: 12,
@@ -115,7 +136,9 @@ const books = [
     author: "Victor Hugo",
     price: 58.0,
     image: lesMiserablesImage,
-    genre: "Drama"
+    genre: "Drama",
+    description:
+      "Um épico da literatura que narra a vida de Jean Valjean, um ex-prisioneiro em busca de redenção na França do século XIX, enfrentando injustiças sociais, amor e luta pela liberdade.",
   },
   {
     id: 13,
@@ -123,7 +146,9 @@ const books = [
     author: "Jane Austen",
     price: 45.9,
     image: prideAndPrejudiceImage,
-    genre: "Romance"
+    genre: "Romance",
+    description:
+      "A história de Elizabeth Bennet e Mr. Darcy revela as complexidades do amor, classe social e julgamentos precipitados na Inglaterra do século XIX, marcada por diálogos afiados e personagens inesquecíveis.",
   },
   {
     id: 14,
@@ -131,7 +156,9 @@ const books = [
     author: "John Green",
     price: 39.9,
     image: theFaultInOurStarsImage,
-    genre: "Drama"
+    genre: "Drama",
+    description:
+      "Hazel e Gus, dois jovens com câncer, encontram no amor e na amizade forças para enfrentar suas limitações e descobrir a beleza da vida mesmo em meio à dor e à incerteza.",
   },
   {
     id: 15,
@@ -139,7 +166,9 @@ const books = [
     author: "Stephen King",
     price: 44.9,
     image: hollyImage,
-    genre: "Suspense"
+    genre: "Suspense",
+    description:
+      "Holly Gibney é uma investigadora particular que enfrenta casos complexos e ameaças perigosas, mostrando coragem e inteligência em meio a situações de suspense e mistério.",
   },
   {
     id: 16,
@@ -147,7 +176,9 @@ const books = [
     author: "Lori Gottlieb",
     price: 34.9,
     image: maybeYouShouldTTalkImage,
-    genre: "Autoajuda"
+    genre: "Autoajuda",
+    description:
+      "Uma terapeuta relata suas próprias sessões e desafios pessoais, revelando a importância do autoconhecimento e da terapia para o crescimento emocional e a superação de crises.",
   },
   {
     id: 17,
@@ -155,7 +186,9 @@ const books = [
     author: "Mark Manson",
     price: 36.0,
     image: theSubtleArtImage,
-    genre: "Autoajuda"
+    genre: "Autoajuda",
+    description:
+      "Um guia direto e irreverente que ensina como focar no que realmente importa na vida, aceitando limitações e escolhas para alcançar uma existência mais significativa e feliz.",
   },
   {
     id: 18,
@@ -163,16 +196,16 @@ const books = [
     author: "Haemin Sunim",
     price: 32.0,
     image: theThingsImage,
-    genre: "Autoajuda"
+    genre: "Autoajuda",
+    description:
+      "Reflexões e ensinamentos para desacelerar o ritmo da vida, encontrar paz interior e cultivar a felicidade em meio às pressões e desafios do cotidiano moderno.",
   },
 ];
-
-
 
 function App() {
   return (
     <>
-      <AppRoutes books={books}/>
+      <AppRoutes books={books} />
     </>
   );
 }
