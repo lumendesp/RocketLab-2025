@@ -123,7 +123,7 @@ const CartSidebar = ({
               <BsCartCheck /> Finalizar Compra
             </button>
             <button
-              className="bg-red-600 text-white w-full py-3 rounded flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+              className="bg-red-600 text-white w-full py-3 rounded flex justify-center items-center gap-2 hover:bg-red-700 transition"
               onClick={() => clearCart()}
             >
               <FaTrashCan /> Limpar Carrinho
