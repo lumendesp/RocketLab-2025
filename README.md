@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# 🚀 RocketLib
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RocketLib é uma loja online de livros desenvolvida com **React**, **Vite** e **TypeScript**, oferecendo uma interface rápida e moderna para os usuários navegarem por diversos títulos. Um dos diferenciais da aplicação é a **geração automática de reviews de livros** usando a **API da Groq**.
 
-Currently, two official plugins are available:
+## 🌐 Acesse o projeto online
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Você pode acessar a RocketLib diretamente pelo Vercel:
 
-## Expanding the ESLint configuration
+👉 [https://rocket-lab-2025.vercel.app/](https://rocket-lab-2025.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ⚙️ Tecnologias utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Groq API](https://groq.com/) – para geração automática de reviews
+- [pnpm](https://pnpm.io/) – gerenciador de pacotes
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/lumendesp/RocketLab-2025.git
+cd RocketLab-2025
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Certifique-se de que você tem o pnpm instalado. Se não tiver, instale com:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install -g pnpm
 ```
+
+### 3. Depois, instale os pacotes do projeto:
+
+```bash
+pnpm install
+```
+
+### 4. Configure a variável de ambiente
+Crie um arquivo .env na raiz do projeto com o seguinte conteúdo (você pode copiar o .env.example):
+
+VITE_GROQ_API_KEY=sua_chave_da_api_groq_aqui
+
+🔐 A chave da API Groq é necessária para gerar as reviews automáticas ao acessar um livro. Para obter a sua chave, basta criar uma conta no Groq: https://console.groq.com/keys
+
+### 5. Rode o projeto localmente:
+
+```bash
+pnpm dev
+```
+
+### Boa! Agora é só abrir no localhost e navegar pelo projeto 🚀
