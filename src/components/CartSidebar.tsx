@@ -115,16 +115,29 @@ const CartSidebar = ({
           Total: R$ {total.toFixed(2)}
         </p>
         {totalQuantity > 0 ? (
-          <button
-            className="bg-blue-600 text-white w-full py-3 rounded flex justify-center items-center gap-2 hover:bg-blue-700 transition"
-            onClick={handleCheckout}
-          >
-            <BsCartCheck /> Finalizar Compra
-          </button>
+          <>
+            <button
+              className="bg-blue-600 text-white w-full py-3 mb-3 rounded flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+              onClick={handleCheckout}
+            >
+              <BsCartCheck /> Finalizar Compra
+            </button>
+            <button
+              className="bg-red-600 text-white w-full py-3 rounded flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+              onClick={() => clearCart()}
+            >
+              <FaTrashCan /> Limpar Carrinho
+            </button>
+          </>
         ) : (
-          <button className="bg-gray-600 text-white w-full py-3 rounded flex justify-center items-center gap-2 cursor-default">
-            <BsCartCheck /> Finalizar Compra
-          </button>
+          <>
+            <button className="bg-gray-600 text-white w-full py-3 mb-3 rounded flex justify-center items-center gap-2 cursor-default">
+              <BsCartCheck /> Finalizar Compra
+            </button>
+            <button className="bg-gray-600 text-white w-full py-3 rounded flex justify-center items-center gap-2 cursor-default">
+              <FaTrashCan /> Limpar Carrinho
+            </button>
+          </>
         )}
       </div>
     </div>

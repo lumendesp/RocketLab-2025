@@ -31,15 +31,15 @@ const Orders = () => {
                 </span>
               </div>
 
-              <div className="flex flex-wrap gap-8">
+              <div className="flex gap-4 overflow-x-auto flex-nowrap sm:flex-wrap">
                 {order.map((item) => (
-                  <div key={item.id} className="border p-4 rounded w-48">
+                  <div key={item.id} className="border p-4 rounded w-48 min-w-[12rem] flex-shrink-0">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="w-full h-64 object-cover rounded"
                     />
-                    <p className="font-semibold mt-2">{item.title}</p>
+                    <p className="font-semibold mt-6">{item.title}</p>
                     <p className="text-sm text-gray-600">
                       Qtd: {item.quantity}
                     </p>
